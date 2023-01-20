@@ -10,7 +10,7 @@ server_socket = socket.socket(
     , socket.SOCK_STREAM # this means it;s a TCP rather than UDP
 )
 
-host = socket.gethostbyname()
+host = socket.gethostname() ## it gets the ip adress, might throw error for windows
 port = 444
 
 ## we need to bind the object - the server_socket
@@ -21,9 +21,9 @@ server_socket.listen(1) ## i only want to listen from one
 
 while True: 
     clientsocket, address = server_socket.accept() ## this will accept the info coming from the client
-    print(" recived connection from " + str(address))
+    print(" recived connection from %s" % str(address))
     message = "Thank you for connecting to the server" +"\r\n"
     
 ## we haven't sent any data back yet!!!
-    clientsocket.send(message)
+    clientsocket.send(message.encode('ascii'))
     clientsocket.close()
