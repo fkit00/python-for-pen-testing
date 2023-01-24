@@ -7,3 +7,4 @@ I'm following the Information Security path on freecodecamp linked here - https:
 Problems 
 - python-nmap is funky in windows and required alot of tinkering to set up 
 - what to scan, but i have found http://scanme.nmap.org/!
+- hack this site is also useful for this course
