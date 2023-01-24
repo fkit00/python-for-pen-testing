@@ -1,6 +1,6 @@
 # python-for-pen-testing
 
-This repo contains a TCP server, TCP client and an nmap scanner all made in Python. 
+This repo contains a TCP server, TCP client, a banner grabber and an nmap scanner all made in Python. 
 
 I'm following the Information Security path on freecodecamp linked here - https://www.freecodecamp.org/learn/information-security/
 
